@@ -1,0 +1,223 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  /* background-color: darkslategray; */
+  background-image: url('../images/photo-1689521568081-c5baa6133bd0.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px;
+}
+
+.yellotail {
+  font-family: 'Yellowtail', cursive;
+}
+
+nav {
+  /* border-bottom: 2px solid white; */
+  border-bottom: 5px solid #e6e6e6;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.nav {
+  /* border-bottom: 5px solid #e6e6e6; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid #ccc;
+  width: auto;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 100px;
+  left: 43%;
+  z-index: 1002;
+}
+
+.nav .nav-link {
+  color: greenyellow;
+  font-weight:900;
+  font-size: 18px;
+
+}
+
+.nav .nav-link:hover {
+  color: white;
+  text-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan
+}
+
+.navbar-brand {
+  font-size: 40px;
+  color: white;
+  text-shadow:
+    0 0 10px cyan,
+    0 0 20px cyan
+}
+
+
+
+/*////////////////////////////////////
+            MASONRY CSS
+/////////////////////////////////////*/
+
+.my-masonry-grid {
+  display: -webkit-box;
+  /* Not needed if autoprefixing */
+  display: -ms-flexbox;
+  /* Not needed if autoprefixing */
+  display: flex;
+  margin-left: -30px;
+  /* gutter size offset */
+  width: auto;
+  background-color: transparent;
+  backdrop-filter: blur(5px);
+  border: 1px solid darkgreengreen;
+}
+
+.my-masonry-grid_column {
+  padding-left: 30px;
+  /* gutter size */
+  padding-right: 30px;
+  background-clip: padding-box;
+  border-radius: 5px;
+}
+
+/* Style your items */
+.my-masonry-grid_column>div {
+  /* change div to reference your elements you put in <Masonry> */
+  background: white;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.my-masonry-grid .content {
+  padding: 15px;
+  background: black;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.my-masonry-grid .content .title {
+  border-bottom: 1px solid #ececec;
+  font-size: 23px;
+  margin-bottom: 12px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+.my-masonry-grid .content .excerpt {
+  font-weight: 100;
+  color: antiquewhite;
+}
+
+.my-masonry-grid .author {
+  padding: 5px 10px;
+  font-size: 12px;
+  background: #dcdcdc;
+  font-weight: 300;
+}
+
+@media (max-width: 800px) {
+  .my-masonry-grid {
+    margin-left: -15px;
+    /* gutter size offset */
+  }
+
+  .my-masonry-grid_column {
+    padding-left: 15px;
+    /* gutter size offset */
+  }
+
+  .my-masonry-grid_column>div {
+    margin-bottom: 15px;
+    /* space between items */
+  }
+}
+
+/*////////////////////////////////////
+            NEWSLETTER
+/////////////////////////////////////*/
+
+.newsletter_container {
+  margin-top: 20px;
+  border-top: 5px solid white;
+  padding-top: 20px;
+}
+
+.newsletter_container h1 {
+  text-align: center;
+  font-family: 'Yellowtail', cursive;
+  color: white;
+  font-weight: bold;
+}
+
+.newsletter_container .form {
+  width: 500px;
+  margin: 0 auto;
+}
+
+/*////////////////////////////////////
+            ARTICLE
+/////////////////////////////////////*/
+
+.article_container h1 {
+  font-size: 58px;
+  font-weight: 300;
+}
+
+.article_container .image {
+  background-size: cover !important;
+  background-repeat: no-repeat !important;
+  width: 100%;
+  height: 500px;
+  border-radius: 5px;
+}
+
+.article_container .author {
+  margin-top: 10px;
+  font-style: italic;
+  font-weight: 300;
+}
+
+
+/*////////////////////////////////////
+            Contact
+/////////////////////////////////////*/
+
+.form-group {
+  color: beige;
+  font-weight: bold;
+}
+
+.form-control {
+  color: rgb(8, 139, 30);
+  border: 2px solid black;
+  outline: none;
+}
+
+.btn {
+  background-color: darkgreen;
+}
+
+.btn:hover {
+  color: white;
+  text-shadow:
+    0 0 40px cyan,
+    0 0 40px cyan;
+  background-color: yellowgreen;
+}
